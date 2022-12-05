@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="144.0" style="-fx-background-color: #363948;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="72.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: #363948;">
+               <image>
+                  <Image url="@../../../SPOON%20AND%20FORK.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="90.0" text="Restaurants" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="-51.5" layoutX="102.0" layoutY="126.0" startX="-102.0" stroke="WHITE" />
+            <AnchorPane layoutX="2.0" layoutY="127.0" prefHeight="273.0" prefWidth="123.0">
+               <children>
+                  <JFXButton fx:id="Home" buttonType="RAISED" layoutX="22.0" layoutY="124.0" onAction="#HomeBtn" prefHeight="25.0" prefWidth="97.0" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="MyReview" buttonType="RAISED" layoutX="28.0" layoutY="157.0" prefHeight="25.0" prefWidth="85.0" text="My Review" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="4.0" layoutY="5.0" prefHeight="112.0" prefWidth="137.0" text="Welcome to our&#10;restaurant review app! &#10;Please choose the &#10;reviewed restaurants &#10;and check their ratings." textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="ContactUs" layoutX="31.0" layoutY="217.0" prefHeight="25.0" prefWidth="85.0" style="-fx-border-color: #FFFFFF;" text="Contact Us" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="-7.0" layoutX="128.0" layoutY="194.0" startX="-101.5" stroke="WHITE" strokeWidth="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Separator layoutX="146.0" layoutY="47.0" prefHeight="2.0" prefWidth="504.0" />
+      <AnchorPane fx:id="holderPane" layoutX="144.0" layoutY="49.0" prefHeight="351.0" prefWidth="504.0" />
+      <JFXToolbar fx:id="toolbar" layoutX="144.0" layoutY="-4.0" prefHeight="52.0" prefWidth="510.0" style="-fx-background-color: #363948;">
+         <center>
+            <Text fx:id="welcome" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" translateX="100.0" wrappingWidth="185.576171875" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </center>
+         <right>
+            <HBox fx:id="toolBarRight" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblMenu" prefHeight="51.0" prefWidth="198.0" />
+               </children>
+            </HBox>
+         </right>
+      </JFXToolbar>
+      <VBox fx:id="overflowContainer" layoutX="546.0" layoutY="3.0" prefHeight="45.0" prefWidth="104.0" style="-fx-background-color: #363948;" styleClass="card-white" stylesheets="@application.css">
+         <children>
+            <Label fx:id="lblMenu" accessibleRole="IMAGE_VIEW">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../Project%20Images/Dotted%20Menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <JFXButton fx:id="logOut" onAction="#logOut" prefHeight="25.0" prefWidth="127.0" text="Log Out" textFill="WHITE" />
+            <JFXButton fx:id="Exit" onAction="#HomeBtn" prefHeight="25.0" prefWidth="130.0" text="Exit" textFill="WHITE" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

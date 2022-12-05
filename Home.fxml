@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="homeAnchor" prefHeight="346.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <JFXButton fx:id="R1" contentDisplay="TOP" layoutX="19.0" layoutY="8.0" onAction="#R1Action" prefHeight="162.0" prefWidth="227.0" style="-fx-background-color: #363948;" text="Restaurant one" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="127.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Project%20Images/R1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="R2" contentDisplay="TOP" layoutX="257.0" layoutY="8.0" onAction="#R2Action" prefHeight="162.0" prefWidth="227.0" style="-fx-background-color: #363948;" text="Restaurant two" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="127.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Project%20Images/R2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="R3" contentDisplay="TOP" layoutX="19.0" layoutY="176.0" onAction="#R3Action" prefHeight="162.0" prefWidth="227.0" style="-fx-background-color: #363948;" text="Restaurant three" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="127.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Project%20Images/R3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="R4" contentDisplay="TOP" layoutX="257.0" layoutY="176.0" onAction="#R4Action" prefHeight="129.0" prefWidth="227.0" style="-fx-background-color: #363948;" text="Restaurant four" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="133.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Project%20Images/R4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
